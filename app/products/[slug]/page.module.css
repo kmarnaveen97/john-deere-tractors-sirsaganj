@@ -1,0 +1,235 @@
+.page {
+  --page-ivory: #f8f6ee;
+  --page-sage: #e8f0e4;
+  --page-sage-soft: #f1f5ed;
+  --page-surface: #fffdf7;
+  --page-line: #ced9ce;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+  background: var(--page-ivory);
+  color: #142118;
+}
+
+.shell {
+  width: min(1180px, calc(100% - 48px));
+  min-width: 0;
+  margin-inline: auto;
+}
+
+.header {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 82px;
+  padding: 0 max(24px, calc((100vw - 1180px) / 2));
+  background: #052f18;
+  color: white;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.brand, .headerActions, .backLink, .callLink, .heroActions, .sourceButton, .primaryButton {
+  display: flex;
+  align-items: center;
+}
+
+.brand { min-width: 0; gap: 0; }
+.headerActions { gap: 10px; }
+.backLink, .callLink { gap: 8px; min-height: 42px; padding: 0 14px; border: 1px solid rgba(255,255,255,.22); font-size: 13px; font-weight: 850; }
+.callLink { border-color: #ffde00; color: #ffde00; }
+
+.hero { padding: 30px 0 76px; background: radial-gradient(circle at 78% 18%, rgba(255,222,0,.1), transparent 24%), linear-gradient(140deg, #042714 0%, #063b1d 54%, #0c542a 100%); color: white; }
+.breadcrumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-bottom: 34px; color: rgba(255,255,255,.6); font-size: 12px; }
+.breadcrumbs a:hover { color: #ffde00; }
+.breadcrumbs strong { overflow: hidden; max-width: 360px; color: rgba(255,255,255,.82); text-overflow: ellipsis; white-space: nowrap; }
+.heroGrid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 72px; align-items: center; }
+.eyebrow, .sectionKicker { margin: 0 0 12px; color: #0b5f2a; font-size: 12px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+.eyebrow { color: #ffde00; }
+.heroCopy h1 { margin: 0; font-size: clamp(47px, 5.7vw, 82px); line-height: .95; letter-spacing: -.055em; }
+.englishName { margin: 13px 0 0; color: rgba(255,255,255,.64); font-size: 15px; font-weight: 800; letter-spacing: .05em; }
+.category { display: inline-flex; margin: 21px 0 0; padding: 8px 11px; background: #ffde00; color: #063b1d; font-size: 13px; font-weight: 900; }
+.lead { max-width: 620px; margin: 25px 0 0; color: rgba(255,255,255,.77); font-size: 17px; line-height: 1.78; }
+.heroActions { flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+.primaryButton, .sourceButton { justify-content: center; gap: 9px; min-height: 52px; padding: 0 20px; font-size: 14px; font-weight: 900; }
+.primaryButton { background: #ffde00; color: #063b1d; }
+.sourceButton { border: 1px solid rgba(255,255,255,.25); color: white; }
+.productVisual { margin: 0; }
+.imageStage { display: grid; place-items: center; min-height: 430px; padding: 38px; overflow: hidden; background: radial-gradient(circle at 50% 42%, #ffffff 0%, #f8faf5 55%, #dce8d9 100%); box-shadow: 0 24px 60px rgba(0,0,0,.18); }
+.imageStage img { display: block; width: 100%; max-height: 380px; object-fit: contain; mix-blend-mode: multiply; }
+.productVisual figcaption { margin-top: 10px; color: rgba(255,255,255,.56); font-size: 11px; line-height: 1.5; text-align: right; }
+.productVisual figcaption a { display: inline-flex; align-items: center; gap: 4px; color: #ffde00; }
+
+.details { position: relative; z-index: 0; isolation: isolate; padding-block: 78px 96px; }
+.details::before { content: ""; position: absolute; z-index: -1; inset: 0 calc((100vw - 100%) / -2); background: radial-gradient(circle at 10% 18%, rgba(255,222,0,.1), transparent 22%), linear-gradient(180deg, var(--page-sage) 0%, var(--page-ivory) 58%, #edf3e9 100%); }
+.specGrid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border: 1px solid var(--page-line); background: rgba(255,253,247,.95); box-shadow: 0 16px 38px rgba(6,59,29,.06); }
+.specGrid article { min-height: 126px; padding: 29px; border-right: 1px solid var(--page-line); }
+.specGrid article:last-child { border-right: 0; }
+.specGrid small { display: block; margin-bottom: 14px; color: #657169; font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.specGrid strong { color: #063b1d; font-size: 20px; line-height: 1.3; }
+.infoGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+.infoCard { min-height: 390px; padding: 46px; border: 1px solid var(--page-line); background: rgba(255,253,247,.96); box-shadow: 0 18px 42px rgba(6,59,29,.055); }
+.infoCard h2, .relatedHeading h2, .dealerCta h2 { margin: 0; font-size: clamp(31px, 3.6vw, 49px); line-height: 1.04; letter-spacing: -.04em; }
+.infoCard ul, .infoCard ol { margin: 31px 0 0; padding: 0; list-style: none; }
+.infoCard ul { display: grid; gap: 13px; }
+.infoCard ul li { display: flex; gap: 11px; align-items: center; padding: 13px 0; border-bottom: 1px solid #e0e5e0; color: #435047; font-size: 15px; }
+.infoCard ul svg { flex: none; color: #0b5f2a; }
+.darkCard { border-color: #063b1d; background: linear-gradient(145deg, #063b1d 0%, #0a4d27 100%); color: white; box-shadow: 0 20px 44px rgba(6,59,29,.16); }
+.darkCard .sectionKicker { color: #ffde00; }
+.darkCard ol { display: grid; gap: 0; }
+.darkCard li { display: grid; grid-template-columns: 36px 1fr; gap: 16px; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,.12); }
+.darkCard li > span { color: #ffde00; font-size: 12px; font-weight: 900; }
+.darkCard li p { margin: 0; color: rgba(255,255,255,.76); font-size: 15px; line-height: 1.65; }
+
+.videoSection { padding-block: 100px; overflow: hidden; background: radial-gradient(circle at 88% 12%, rgba(255,222,0,.1), transparent 24%), linear-gradient(140deg, #02170c 0%, #063b1d 58%, #0b4c27 100%); color: white; }
+.videoGrid { display: grid; grid-template-columns: .62fr 1.38fr; gap: 58px; align-items: center; }
+.videoBadge { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 22px; padding: 8px 10px; background: #ffde00; color: #063b1d; font-size: 11px; font-weight: 950; letter-spacing: .11em; }
+.videoCopy .sectionKicker { color: #ffde00; }
+.videoCopy h2 { margin: 0; font-size: clamp(35px, 4vw, 56px); line-height: 1; letter-spacing: -.045em; }
+.videoCopy h3 { margin: 25px 0 0; color: white; font-size: 18px; line-height: 1.45; }
+.videoCopy > p:not(.sectionKicker) { margin: 14px 0 0; color: rgba(255,255,255,.7); font-size: 15px; line-height: 1.75; }
+.videoSource { display: flex; align-items: center; gap: 11px; margin-top: 27px; padding-top: 21px; border-top: 1px solid rgba(255,255,255,.14); }
+.videoSource > svg { flex: none; color: #ffde00; }
+.videoSource > span { display: flex; flex-direction: column; gap: 3px; }
+.videoSource strong { font-size: 13px; }
+.videoSource small { color: rgba(255,255,255,.5); font-size: 11px; }
+.videoFrame { position: relative; overflow: hidden; background: #010804; border: 1px solid rgba(255,255,255,.2); box-shadow: 0 32px 75px rgba(0,0,0,.36); }
+.videoFrame::before { content: ""; position: absolute; z-index: 2; inset: 0 0 auto; height: 3px; background: #ffde00; pointer-events: none; }
+.videoTopbar { display: flex; align-items: center; justify-content: space-between; min-height: 50px; padding: 0 18px; background: #071a0e; border-bottom: 1px solid rgba(255,255,255,.1); }
+.videoTopbar span { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,.7); font-size: 11px; font-weight: 900; letter-spacing: .11em; }
+.videoTopbar i { width: 7px; height: 7px; border-radius: 50%; background: #ffde00; box-shadow: 0 0 0 4px rgba(255,222,0,.1); }
+.videoTopbar strong { color: rgba(255,255,255,.48); font-size: 10px; letter-spacing: .12em; }
+.videoViewport { padding: 8px; background: linear-gradient(145deg, #010703, #06180d); }
+.videoViewport iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 1px solid rgba(255,255,255,.1); }
+.videoToolbar { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 72px; padding: 12px 18px; background: #071a0e; border-top: 1px solid rgba(255,255,255,.1); }
+.videoToolbar > span { display: flex; min-width: 0; flex-direction: column; gap: 5px; }
+.videoToolbar small { color: rgba(255,255,255,.48); font-size: 10px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+.videoToolbar strong { overflow: hidden; max-width: 330px; color: white; font-size: 13px; text-overflow: ellipsis; white-space: nowrap; }
+.videoToolbar a { flex: none; display: inline-flex; align-items: center; gap: 7px; min-height: 40px; padding: 0 12px; background: #ffde00; color: #063b1d; font-size: 12px; font-weight: 950; transition: background .2s ease, transform .2s ease; }
+.videoToolbar a:hover { transform: translateY(-2px); background: #ffe83b; }
+
+.relatedSection { padding-block: 88px; background: linear-gradient(180deg, #f9faf6 0%, var(--page-sage-soft) 100%); border-top: 1px solid var(--page-line); }
+.relatedHeading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 35px; }
+.relatedHeading > a { display: flex; align-items: center; gap: 8px; color: #0b5f2a; font-size: 13px; font-weight: 900; }
+.relatedGrid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.relatedCard { display: flex; flex-direction: column; min-width: 0; padding: 17px; border: 1px solid var(--page-line); background: rgba(255,253,247,.94); box-shadow: 0 12px 30px rgba(6,59,29,.045); transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+.relatedCard:hover { transform: translateY(-4px); border-color: #0b5f2a; box-shadow: 0 18px 38px rgba(6,59,29,.1); }
+.relatedCard > div { display: grid; place-items: center; height: 165px; margin-bottom: 18px; overflow: hidden; background: radial-gradient(circle at 50% 45%, #fff 0%, #edf3e9 100%); }
+.relatedCard img { width: 100%; height: 145px; object-fit: contain; mix-blend-mode: multiply; }
+.relatedCard small { color: #657169; font-size: 11px; line-height: 1.4; text-transform: uppercase; }
+.relatedCard strong { margin-top: 7px; color: #063b1d; font-size: 15px; line-height: 1.35; }
+.relatedCard > span { display: flex; align-items: center; gap: 6px; margin-top: 19px; color: #0b5f2a; font-size: 13px; font-weight: 900; }
+
+.dealerCta { padding-block: 82px; background: radial-gradient(circle at 8% 10%, rgba(255,222,0,.09), transparent 25%), linear-gradient(135deg, #0b5f2a 0%, #063b1d 100%); color: white; }
+.dealerGrid { display: grid; grid-template-columns: 1fr .8fr; gap: 80px; align-items: center; }
+.dealerCta .sectionKicker { color: #ffde00; }
+.dealerCta h2 { max-width: 620px; }
+.dealerCta p:not(.sectionKicker) { max-width: 640px; margin: 20px 0 0; color: rgba(255,255,255,.74); font-size: 15px; line-height: 1.7; }
+.dealerActions { display: grid; gap: 10px; }
+.dealerActions > a { display: grid; grid-template-columns: 26px 1fr; gap: 13px; align-items: center; min-height: 70px; padding: 13px 18px; border: 1px solid rgba(255,255,255,.22); }
+.dealerActions svg { color: #ffde00; }
+.dealerActions span { display: flex; flex-direction: column; gap: 4px; }
+.dealerActions small { color: rgba(255,255,255,.58); font-size: 11px; }
+.dealerActions strong { font-size: 15px; }
+.dealerMap { margin-top: 38px; overflow: hidden; border: 1px solid rgba(255,255,255,.22); background: #063b1d; }
+.dealerMap iframe { display: block; width: 100%; height: 390px; border: 0; filter: saturate(.92) contrast(1.03); }
+.dealerMap > div { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px 20px; background: rgba(3,40,18,.62); }
+.dealerMap > div > span { display: grid; grid-template-columns: 23px 1fr; gap: 3px 9px; color: rgba(255,255,255,.68); font-size: 12px; line-height: 1.5; }
+.dealerMap > div > span svg { grid-row: span 2; margin-top: 2px; color: #ffde00; }
+.dealerMap > div > span strong { color: white; font-size: 14px; }
+.dealerMap > div > a { flex: none; display: inline-flex; align-items: center; gap: 7px; color: #ffde00; font-size: 12px; font-weight: 900; }
+.footer { padding-block: 31px; background: #061d10; color: rgba(255,255,255,.48); }
+.footer > div { display: flex; justify-content: space-between; gap: 30px; }
+.footer p { max-width: 550px; margin: 0; font-size: 12px; line-height: 1.65; }
+.footer p:last-child { text-align: right; }
+
+/* Product detail refinement */
+.header { border-bottom: 3px solid #ffde00; }
+.backLink, .callLink, .primaryButton, .sourceButton, .videoToolbar a { border-radius: 9px; }
+.imageStage, .specGrid, .infoCard, .videoFrame, .relatedCard, .dealerActions > a, .dealerMap { border-radius: 14px; }
+.category, .videoBadge { border-radius: 6px; }
+
+@media (max-width: 900px) {
+  .heroGrid, .infoGrid, .videoGrid, .dealerGrid { grid-template-columns: 1fr; }
+  .heroGrid { gap: 42px; }
+  .videoGrid { gap: 38px; }
+  .videoCopy { max-width: 690px; }
+  .specGrid { grid-template-columns: repeat(2, 1fr); }
+  .specGrid article:nth-child(2) { border-right: 0; }
+  .specGrid article:nth-child(-n+2) { border-bottom: 1px solid #d8ded8; }
+  .relatedGrid { grid-template-columns: repeat(2, 1fr); }
+  .dealerGrid { gap: 38px; }
+}
+
+@media (max-width: 640px) {
+  .shell { width: min(100% - 28px, 1180px); }
+  .header { position: sticky; top: 0; min-height: 70px; padding-inline: 14px; }
+  .backLink { display: none; }
+  .callLink { width: 40px; height: 40px; justify-content: center; padding: 0; }
+  .callLink span { display: none; }
+  .hero { padding: 20px 0 44px; }
+  .breadcrumbs { gap: 7px; margin-bottom: 18px; font-size: 10px; }
+  .heroGrid { gap: 25px; }
+  .productVisual { order: -1; }
+  .imageStage { min-height: 230px; padding: 16px; }
+  .imageStage img { max-height: 208px; }
+  .productVisual figcaption { margin-top: 7px; font-size: 9px; }
+  .heroCopy h1 { font-size: 41px; line-height: .98; }
+  .englishName { margin-top: 9px; font-size: 13px; }
+  .category { margin-top: 15px; font-size: 11px; }
+  .lead { margin-top: 17px; font-size: 14px; line-height: 1.62; }
+  .heroActions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 22px; }
+  .primaryButton { grid-column: 1 / -1; }
+  .primaryButton, .sourceButton { min-height: 48px; padding-inline: 10px; font-size: 12px; }
+  .sourceButton:last-child { grid-column: 1 / -1; }
+  .details { padding-block: 42px 48px; }
+  .specGrid { display: grid; width: 100%; min-width: 0; max-width: 100%; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: min(45vw, 145px); overflow-x: auto; overflow-y: hidden; overscroll-behavior-inline: contain; border-right: 0; scroll-snap-type: x mandatory; scrollbar-width: none; }
+  .specGrid::-webkit-scrollbar { display: none; }
+  .specGrid article { min-height: 95px; padding: 18px; border-right: 1px solid #d8ded8; border-bottom: 0 !important; scroll-snap-align: start; }
+  .specGrid article:last-child { border-right: 0; }
+  .specGrid small { margin-bottom: 9px; font-size: 9px; }
+  .specGrid strong { font-size: 16px; }
+  .infoGrid { gap: 10px; margin-top: 10px; }
+  .infoCard { min-height: unset; padding: 27px 21px; }
+  .infoCard h2 { font-size: 30px; }
+  .infoCard ul, .infoCard ol { margin-top: 22px; }
+  .infoCard ul li { padding: 11px 0; font-size: 14px; }
+  .darkCard li { gap: 10px; padding: 13px 0; }
+  .darkCard li p { font-size: 14px; }
+  .videoSection, .relatedSection, .dealerCta { padding-block: 46px; }
+  .videoGrid { gap: 28px; }
+  .videoFrame { order: -1; }
+  .videoViewport { padding: 5px; }
+  .videoTopbar { min-height: 44px; padding-inline: 13px; }
+  .videoTopbar strong { display: none; }
+  .videoToolbar { align-items: stretch; flex-direction: column; min-height: unset; padding: 14px; }
+  .videoToolbar strong { max-width: 100%; }
+  .videoToolbar a { justify-content: center; }
+  .videoCopy h2 { font-size: 36px; }
+  .videoCopy h3 { margin-top: 17px; font-size: 16px; }
+  .videoSource { margin-top: 19px; padding-top: 16px; }
+  .relatedHeading { align-items: flex-start; flex-direction: column; gap: 13px; margin-bottom: 22px; }
+  .relatedHeading h2 { font-size: 34px; }
+  .relatedGrid { display: grid; width: 100%; min-width: 0; max-width: 100%; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: min(79vw, 255px); gap: 10px; overflow-x: auto; overflow-y: hidden; overscroll-behavior-inline: contain; padding-bottom: 7px; scroll-snap-type: x mandatory; scrollbar-width: none; }
+  .relatedGrid::-webkit-scrollbar { display: none; }
+  .relatedCard { scroll-snap-align: start; scroll-snap-stop: always; }
+  .relatedCard > div { height: 175px; }
+  .dealerGrid { gap: 25px; }
+  .dealerCta h2 { font-size: 34px; }
+  .dealerActions > a { min-height: 62px; }
+  .dealerMap { margin-top: 26px; }
+  .dealerMap iframe { height: 225px; }
+  .dealerMap > div { align-items: flex-start; flex-direction: column; padding: 16px; }
+  .footer > div { flex-direction: column; }
+  .footer p:last-child { text-align: left; }
+}
+
+@media (max-width: 380px) {
+  .shell { width: calc(100% - 24px); }
+  .heroCopy h1 { font-size: 37px; }
+  .heroActions { grid-template-columns: 1fr; }
+  .primaryButton, .sourceButton, .sourceButton:last-child { grid-column: 1; }
+}
+

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="296" height="64" viewBox="0 0 296 64" role="img" aria-labelledby="title desc">
+  <title id="title">S.B. Auto Sales and Services Sirsaganj</title>
+  <desc id="desc">S.B. Auto dealership wordmark in yellow, green and white</desc>
+  <g>
+    <rect x="1" y="1" width="62" height="62" rx="7" fill="#ffde00"/>
+    <path d="M1 49L20 63H1V49Z" fill="#0b5f2a"/>
+    <path d="M63 1V15L44 1H63Z" fill="#ffffff" fill-opacity="0.55"/>
+    <text x="32" y="41" fill="#063b1d" font-family="Arial, Helvetica, sans-serif" font-size="27" font-style="italic" font-weight="900" letter-spacing="-2.2" text-anchor="middle">SB</text>
+  </g>
+  <text x="76" y="31" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="25" font-style="italic" font-weight="900" letter-spacing="1.3">S.B. AUTO</text>
+  <rect x="76" y="38" width="218" height="3" rx="1.5" fill="#ffde00"/>
+  <text x="76" y="56" fill="#ffffff" fill-opacity="0.76" font-family="Arial, Helvetica, sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.3">SALES &#8226; SERVICE &#8226; PARTS</text>
+  <text x="294" y="56" fill="#ffde00" font-family="Arial, Helvetica, sans-serif" font-size="8.5" font-weight="800" letter-spacing="1.2" text-anchor="end">SIRSAGANJ</text>
+</svg>
