@@ -261,3 +261,14 @@
 .realPhotoGrid img { display: block; width: 100%; height: 190px; object-fit: cover; }
 .realPhotoGrid figcaption { padding: 12px 14px; color: #5e6b62; font-size: 12px; line-height: 1.5; }
 @media (max-width: 900px) { .realPhotoGrid { grid-template-columns: 1fr 1fr; } }
+
+.versus { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 18px; margin-top: 38px; padding: 26px; border: 1px solid rgba(255,255,255,.15); border-radius: 14px; background: rgba(255,255,255,.05); }
+.versus figure { display: flex; flex-direction: column; align-items: center; gap: 12px; margin: 0; }
+.versus img { width: 100%; max-width: 300px; height: auto; object-fit: contain; }
+.versus figcaption { color: white; font-size: 14px; font-weight: 900; text-align: center; }
+.versusMark { display: inline-grid; width: 46px; height: 46px; place-items: center; border-radius: 50%; background: #ffde00; color: #063b1d; font-size: 12px; font-weight: 950; }
+@media (max-width: 760px) {
+  .versus { grid-template-columns: 1fr; gap: 12px; padding: 18px; }
+  .versus img { max-width: 210px; }
+  .versusMark { justify-self: center; }
+}

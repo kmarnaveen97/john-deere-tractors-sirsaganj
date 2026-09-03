@@ -19,12 +19,20 @@
 // Deere genuinely leads, and widening the question from sticker price to running
 // cost. Nothing is hidden; the full table is always shown.
 
+// Product images are the manufacturers' own, saved locally under /public/rivals
+// rather than hotlinked. Hotlinks to these hosts are fragile — URLs move, and
+// several of these sites are search competitors who can block referrers — which
+// would leave the comparison pages with broken images and no warning.
+
 export type SpecRow = { label: string; johnDeere: string; rival: string };
 
 export type Comparison = {
   slug: string;
   johnDeereName: string;
   johnDeereSlug: string;
+  /** Self-hosted under /public/rivals — see the note above on why not hotlinked. */
+  johnDeereImage: string;
+  rivalImage: string;
   rivalBrand: string;
   rivalName: string;
   sources: { label: string; url: string }[];
@@ -73,6 +81,8 @@ export const comparisons: Comparison[] = [
     slug: "john-deere-5045d-vs-mahindra-575-di",
     johnDeereName: "John Deere 5045D",
     johnDeereSlug: "5045d-powerpro",
+    johnDeereImage: "/rivals/john-deere-5045d.jpg",
+    rivalImage: "/rivals/mahindra-575-di.png",
     rivalBrand: "Mahindra",
     rivalName: "Mahindra 575 DI XP Plus",
     sources: [
@@ -97,6 +107,8 @@ export const comparisons: Comparison[] = [
     slug: "john-deere-5045d-vs-swaraj-744-fe",
     johnDeereName: "John Deere 5045D",
     johnDeereSlug: "5045d-powerpro",
+    johnDeereImage: "/rivals/john-deere-5045d.jpg",
+    rivalImage: "/rivals/swaraj-744-fe.png",
     rivalBrand: "Swaraj",
     rivalName: "Swaraj 744 FE",
     sources: [
@@ -121,6 +133,8 @@ export const comparisons: Comparison[] = [
     slug: "john-deere-5045d-vs-sonalika-di-745-iii",
     johnDeereName: "John Deere 5045D",
     johnDeereSlug: "5045d-powerpro",
+    johnDeereImage: "/rivals/john-deere-5045d.jpg",
+    rivalImage: "/rivals/sonalika-745-iii.webp",
     rivalBrand: "Sonalika",
     rivalName: "Sonalika DI 745 III",
     sources: [
@@ -145,6 +159,8 @@ export const comparisons: Comparison[] = [
     slug: "john-deere-5045d-vs-massey-ferguson-241-di",
     johnDeereName: "John Deere 5045D",
     johnDeereSlug: "5045d-powerpro",
+    johnDeereImage: "/rivals/john-deere-5045d.jpg",
+    rivalImage: "/rivals/massey-241-di.jpg",
     rivalBrand: "Massey Ferguson",
     rivalName: "Massey Ferguson 241 DI",
     sources: [
@@ -169,6 +185,8 @@ export const comparisons: Comparison[] = [
     slug: "john-deere-5045d-vs-powertrac-euro-45-plus",
     johnDeereName: "John Deere 5045D",
     johnDeereSlug: "5045d-powerpro",
+    johnDeereImage: "/rivals/john-deere-5045d.jpg",
+    rivalImage: "/rivals/powertrac-euro-45-plus.webp",
     rivalBrand: "Powertrac",
     rivalName: "Powertrac Euro 45 Plus",
     sources: [

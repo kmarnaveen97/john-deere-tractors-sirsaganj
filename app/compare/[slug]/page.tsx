@@ -52,6 +52,17 @@ export default async function ComparePage({ params }: ComparePageProps) {
             </div>
             <p className={styles.heroLead}>{item.intro}</p>
           </div>
+          <div className={styles.versus}>
+            <figure>
+              <img src={item.johnDeereImage} alt={`${item.johnDeereName} ट्रैक्टर`} width="520" height="400" />
+              <figcaption>{item.johnDeereName}</figcaption>
+            </figure>
+            <span className={styles.versusMark}>बनाम</span>
+            <figure>
+              <img src={item.rivalImage} alt={`${item.rivalName} ट्रैक्टर`} width="520" height="400" loading="lazy" />
+              <figcaption>{item.rivalName}</figcaption>
+            </figure>
+          </div>
           <div className={styles.heroStats}>
             <span><strong>आधिकारिक</strong><small>निर्माता आँकड़े</small></span>
             <span><strong>{item.rows.length}</strong><small>बिंदुओं पर तुलना</small></span>
@@ -110,7 +121,7 @@ export default async function ComparePage({ params }: ComparePageProps) {
                 <a href={source.url} target="_blank" rel="noreferrer nofollow">{source.label} <ExternalLink size={11} /></a>
               </span>
             ))}
-            . आँकड़े वेरिएंट और समय के साथ बदल सकते हैं — खरीद से पहले शोरूम पर पुष्टि करें।
+            . आँकड़े और तस्वीरें संबंधित निर्माताओं की हैं। आँकड़े वेरिएंट और समय के साथ बदल सकते हैं — खरीद से पहले शोरूम पर पुष्टि करें।
           </p>
         </div>
       </section>
