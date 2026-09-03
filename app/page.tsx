@@ -19,18 +19,18 @@ import { WhatsAppQueryLink } from "@/components/whatsapp-query-link";
 const highlights = [
   {
     icon: ShieldCheck,
-    title: "भरोसेमंद मशीन",
-    text: "उत्तर भारत की खेती और कठिन कार्यों के लिए बनी मजबूत ट्रैक्टर रेंज।",
+    title: "28 से 130 HP तक",
+    text: "D, E, Speciality और 5M — चारों सीरीज़ के मौजूदा मॉडल एक ही जगह देखिए और तुलना कीजिए।",
   },
   {
     icon: Wrench,
-    title: "सर्विस सपोर्ट",
-    text: "जेन्युइन पार्ट्स, नियमित रखरखाव और प्रशिक्षित तकनीकी सहायता।",
+    title: "पार्ट्स पहले जाँच लीजिए",
+    text: "आने से पहले WhatsApp पर मॉडल और पार्ट का नाम भेजिए — स्टॉक की पुष्टि करके ही बुलाएँगे।",
   },
   {
     icon: IndianRupee,
-    title: "फाइनेंस सहायता",
-    text: "बजट और खेती की जरूरत के अनुसार लोन विकल्पों की जानकारी।",
+    title: "EMI खुद जोड़िए",
+    text: "कीमत, डाउन पेमेंट और अवधि डालकर मासिक किस्त तुरंत देखिए — किसी से पूछने की जरूरत नहीं।",
   },
 ];
 
@@ -73,8 +73,8 @@ export default function Home() {
           </h1>
           <p className="dealer-tagline reveal-three">सिरसागंज का भरोसेमंद कृषि मशीनरी साथी</p>
           <p className="hero-lead reveal-three">
-            Etawah Road स्थित हमारे शोरूम पर John Deere ट्रैक्टर, GreenSystem™
-            इम्प्लीमेंट, फाइनेंस, जेन्युइन पार्ट्स और सर्विस सहायता—सब एक जगह।
+            सिरसागंज के शोरूम पर John Deere ट्रैक्टर और GreenSystem™ इम्प्लीमेंट देखिए।
+            खरीद, फाइनेंस, असली पार्ट्स और सर्विस—पूरी मदद एक ही जगह।
           </p>
           <div className="hero-actions reveal-four">
             <WhatsAppQueryLink className="button button-primary" subject="सामान्य enquiry">

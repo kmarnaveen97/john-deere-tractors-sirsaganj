@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ArrowRight, BadgeCheck, IndianRupee, MapPin, MessageCircle, Wrench } from "lucide-react";
 import { DealerCta, SiteFooter, SiteHeader } from "@/components/site-shell";
 import { WhatsAppQueryLink } from "@/components/whatsapp-query-link";
+import { SocialProof } from "@/components/social-proof";
 import { seriesItems } from "@/lib/catalog";
 import {
   areaFaqs,
@@ -198,6 +199,8 @@ export default async function AreaPage({ params }: AreaPageProps) {
           </div>
         </div>
       </section>
+
+      <SocialProof />
 
       <section className={styles.sectionAlt}>
         <div className={styles.shell}>

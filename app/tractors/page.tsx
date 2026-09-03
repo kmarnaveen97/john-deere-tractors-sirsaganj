@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ArrowRight } from "lucide-react";
 import { DealerCta, SiteFooter, SiteHeader } from "@/components/site-shell";
 import { seriesItems, tractorItems } from "@/lib/catalog";
+import { TractorAdvisor } from "@/components/tractor-advisor";
 import styles from "@/app/section-page.module.css";
 
 export const metadata: Metadata = {
@@ -20,6 +21,16 @@ export default function TractorsPage() {
             <p className={styles.heroLead}>D Series से 130 HP 5M Series तक पूरी रेंज। मॉडल की तस्वीर, पावर, ड्राइव, उपयोग और official product video के साथ विस्तृत हिंदी जानकारी पाएँ।</p>
           </div>
           <div className={styles.heroStats}><span><strong>{seriesItems.length}</strong><small>ट्रैक्टर सीरीज़</small></span><span><strong>{tractorItems.length}</strong><small>मौजूदा मॉडल</small></span><span><strong>28–130 HP</strong><small>पावर रेंज</small></span></div>
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.shell}>
+          <div className={styles.heading}>
+            <div><p className={styles.kicker}>दो सवाल, सीधा जवाब</p><h2>कौन सा ट्रैक्टर<br />आपके लिए सही है?</h2></div>
+            <p>पूरी सूची देखने से पहले दो सवालों के जवाब दीजिए — हम आपके खेत और काम के हिसाब से तीन मॉडल छाँट देंगे।</p>
+          </div>
+          <TractorAdvisor />
         </div>
       </section>
 
