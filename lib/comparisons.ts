@@ -156,10 +156,10 @@ export const comparisons: Comparison[] = [
       "Sonalika DI 745 III की लिफ्ट क्षमता 2000 kg है और उसके गियरबॉक्स के विकल्प ज्यादा हैं — 16 आगे + 4 पीछे तक। यह उन किसानों के लिए मायने रखता है जो बहुत अलग-अलग रफ्तार पर काम करते हैं। 5045D का रेटेड RPM 2100 है, जो DI 745 III के 1900 से ज्यादा है, और उसके पीछे के चार गियर मानक रूप से मिलते हैं। दोनों कंपनियों ने कुछ आँकड़े अपने पेज पर नहीं दिए हैं, इसलिए बाकी तुलना शोरूम पर आमने-सामने ही ठीक से होगी।",
   },
   {
-    slug: "john-deere-5045d-vs-massey-ferguson-241-di",
-    johnDeereName: "John Deere 5045D",
-    johnDeereSlug: "5045d-powerpro",
-    johnDeereImage: "/rivals/john-deere-5045d.jpg",
+    slug: "john-deere-5042d-vs-massey-ferguson-241-di",
+    johnDeereName: "John Deere 5042D",
+    johnDeereSlug: "5042d-powerpro",
+    johnDeereImage: "/rivals/john-deere-5042d.png",
     rivalImage: "/rivals/massey-241-di.jpg",
     rivalBrand: "Massey Ferguson",
     rivalName: "Massey Ferguson 241 DI",
@@ -168,18 +168,18 @@ export const comparisons: Comparison[] = [
       { label: "masseyfergusonindia.com — MF 241 DI", url: "https://masseyfergusonindia.com/massey-ferguson/MF-241-DI" },
     ],
     intro:
-      "शिकोहाबाद में Massey Ferguson का डीलर है और 241 DI इस इलाके का जाना-पहचाना ट्रैक्टर है। ध्यान रहे कि यह 42 HP वर्ग का है जबकि John Deere 5045D 45–46 HP का — यानी दोनों बिल्कुल एक वर्ग में नहीं आते, और नीचे के आँकड़े इसी संदर्भ में देखिए। सभी आँकड़े दोनों कंपनियों की अपनी वेबसाइट से हैं।",
+      "शिकोहाबाद में Massey Ferguson का डीलर है और 241 DI इस इलाके का जाना-पहचाना ट्रैक्टर है। यह 42 HP वर्ग का है, इसलिए इसकी तुलना यहाँ John Deere 5042D (44 HP) से की गई है, 5045D से नहीं — ताकि दोनों लगभग एक ही वर्ग में रहें। सभी आँकड़े दोनों कंपनियों की अपनी वेबसाइट से हैं।",
     rows: [
-      { label: "गियर", johnDeere: "8 आगे + 4 पीछे", rival: "8 आगे + 2 पीछे" },
-      { label: "इंजन पावर", johnDeere: "46 HP (4WD) / 45 HP (2WD)", rival: "31.33 kW (42 HP वर्ग)" },
-      { label: "इंजन क्षमता", johnDeere: "2900 CC", rival: "2500 CC" },
+      { label: "गियर", johnDeere: "8 आगे + 4 पीछे, कॉलरशिफ्ट", rival: "8 आगे + 2 पीछे" },
+      { label: "इंजन पावर", johnDeere: "44 HP (32.3 kW)", rival: "31.33 kW (42 HP वर्ग)" },
       { label: "रेटेड RPM", johnDeere: "2100", rival: "2000" },
       { label: "सिलेंडर", johnDeere: "3", rival: "3" },
+      { label: "इंजन क्षमता", johnDeere: "निर्माता पेज पर नहीं दी गई", rival: "2500 CC" },
       { label: "हाइड्रोलिक लिफ्ट क्षमता", johnDeere: "1600 kgf", rival: "1700 kgf" },
-      { label: "PTO", johnDeere: "निर्माता पेज पर नहीं दी गई", rival: "540 RPM @ 1500 ERPM (HP नहीं दी गई)" },
+      { label: "PTO", johnDeere: "540 @ 2100 ERPM (इकोनॉमी 540 @ 1600)", rival: "540 RPM @ 1500 ERPM" },
     ],
     verdict:
-      "यह तुलना बराबरी की नहीं है और यह पहले ही कह देना ठीक है — 241 DI 42 HP वर्ग का ट्रैक्टर है, इसलिए 5045D का ज्यादा पावर और बड़ा इंजन (2900 CC बनाम 2500 CC) होना स्वाभाविक है। असली फर्क गियर में है: 5045D में पीछे चार गियर हैं, 241 DI में दो। लिफ्ट क्षमता में 241 DI थोड़ा आगे है — 1700 kgf बनाम 1600 kgf। अगर आपका काम 42 HP में निपट जाता है तो 241 DI कम कीमत में विकल्प बन सकता है; अगर आपको ज्यादा पावर, ज्यादा गियर और भारी इम्प्लीमेंट चलाने हैं तो 5045D उसी हिसाब से बना है।",
+      "पावर लगभग बराबर है — 44 HP बनाम 42 HP वर्ग। साफ फर्क गियर का है: 5042D में पीछे चार गियर मिलते हैं, 241 DI में दो। ट्रॉली के साथ तंग जगह में पीछे लेना हो तो यह रोज काम आता है, और 5042D का रेटेड RPM भी ज्यादा (2100 बनाम 2000) है। दूसरी तरफ लिफ्ट क्षमता में 241 DI आगे है — 1700 kgf बनाम 1600 kgf। दोनों की PTO एक जैसी 540 है, पर 5042D में इकोनॉमी PTO का विकल्प भी है, जो कम RPM पर डीजल बचाने के लिए दिया जाता है।",
   },
   {
     slug: "john-deere-5045d-vs-powertrac-euro-45-plus",
@@ -206,6 +206,84 @@ export const comparisons: Comparison[] = [
     ],
     verdict:
       "लिफ्ट क्षमता दोनों की एक जैसी है — 1600। पावर भी लगभग बराबर है, Euro 45 Plus कागज पर 47 HP वर्ग का है। साफ फर्क फिर गियर का ही है: 5045D में पीछे चार गियर, Euro 45 Plus में दो। Powertrac ने PTO पावर और टॉर्क अपने पेज पर साफ बताए हैं, जो John Deere के पेज पर नहीं हैं — इतनी हद तक Powertrac की जानकारी ज्यादा खुली है। जब दो ट्रैक्टर आँकड़ों में इतने पास हों, तब फैसला मशीन से हटकर सर्विस की दूरी, पार्ट्स की उपलब्धता और पाँच साल बाद की कीमत पर आ जाता है।",
+  },
+  {
+    slug: "john-deere-5050d-vs-swaraj-855-fe",
+    johnDeereName: "John Deere 5050D",
+    johnDeereSlug: "5050d",
+    johnDeereImage: "/rivals/john-deere-5050d.png",
+    rivalImage: "/rivals/swaraj-855-fe.png",
+    rivalBrand: "Swaraj",
+    rivalName: "Swaraj 855 FE",
+    sources: [
+      { label: "deere.co.in — 5050D", url: "https://www.deere.co.in/en/tractors/d-series-tractors/5050d-tractor/" },
+      { label: "swarajtractors.com — 855 FE", url: "https://www.swarajtractors.com/swaraj-855-fe-tractor" },
+    ],
+    intro:
+      "50 HP वर्ग में Swaraj 855 FE इस पूरे इलाके का सबसे जाना-पहचाना नाम है और ज़िले में Swaraj के कई डीलर हैं। John Deere 5050D उसी वर्ग में आता है। दोनों के आधिकारिक आँकड़े नीचे हैं।",
+    rows: [
+      { label: "गियर", johnDeere: "8 आगे + 4 पीछे, कॉलरशिफ्ट", rival: "8 आगे + 2 पीछे (12 आगे + 12 पीछे तक विकल्प)" },
+      { label: "रेटेड RPM", johnDeere: "2100", rival: "2000" },
+      { label: "इंजन पावर", johnDeere: "50 HP (36.5 kW)", rival: "46–50 HP (33.56–37.28 kW)" },
+      { label: "सिलेंडर", johnDeere: "3", rival: "3" },
+      { label: "इंजन क्षमता", johnDeere: "2.9 लीटर", rival: "3478 cc" },
+      { label: "हाइड्रोलिक लिफ्ट क्षमता", johnDeere: "1600 kgf", rival: "2000 kg" },
+      { label: "PTO", johnDeere: "540 @ 2100 ERPM, इकोनॉमी 540 @ 1600", rival: "540, वैकल्पिक 540/540" },
+    ],
+    verdict:
+      "Swaraj 855 FE की लिफ्ट क्षमता 2000 kg है और इंजन भी बड़ा — 3478 cc बनाम 2.9 लीटर। जो किसान रोज बहुत भारी इम्प्लीमेंट उठाते हैं, उनके लिए यह असली फायदा है और इसे छिपाने का कोई मतलब नहीं। 5050D की तरफ पीछे के चार गियर मानक रूप से मिलते हैं, रेटेड RPM ज्यादा है, और इकोनॉमी PTO कम RPM पर डीजल बचाने के लिए दिया गया है। सवाल वही है — आपके अपने इम्प्लीमेंट कितना वजन माँगते हैं, और उसके बाद सर्विस तथा पाँच साल बाद की कीमत।",
+  },
+  {
+    slug: "john-deere-5310-vs-sonalika-di-750-iii",
+    johnDeereName: "John Deere 5310",
+    johnDeereSlug: "5310-powertech",
+    johnDeereImage: "/rivals/john-deere-5310.png",
+    rivalImage: "/rivals/sonalika-750-iii.webp",
+    rivalBrand: "Sonalika",
+    rivalName: "Sonalika DI 750 III",
+    sources: [
+      { label: "deere.co.in — 5310", url: "https://www.deere.co.in/en/tractors/e-series-tractors/5310e-tractor/" },
+      { label: "sonalika.com — DI 750 III", url: "https://www.sonalika.com/tractor/di-750-iii.html" },
+    ],
+    intro:
+      "बड़ी जोत और भारी इम्प्लीमेंट वाले किसान 55–57 HP वर्ग देखते हैं। Sonalika DI 750 III और John Deere 5310, दोनों इसी वर्ग में हैं। आँकड़े दोनों कंपनियों की वेबसाइट से लिए गए हैं।",
+    rows: [
+      { label: "इंजन", johnDeere: "टर्बो चार्ज्ड, HPCR फ्यूल इंजेक्शन", rival: "निर्माता पेज पर तकनीक नहीं बताई गई" },
+      { label: "गियर", johnDeere: "12 आगे + 4 पीछे (GearPro), 12+12 PowrReverser विकल्प", rival: "8+2 / 12+3 / 12+12" },
+      { label: "रेटेड RPM", johnDeere: "2100", rival: "2000" },
+      { label: "इंजन पावर", johnDeere: "57 HP (42 kW)", rival: "55 HP वर्ग" },
+      { label: "हाइड्रोलिक लिफ्ट क्षमता", johnDeere: "2000 kgf (वैकल्पिक 2500 kgf)", rival: "2200 kg" },
+      { label: "सिलेंडर", johnDeere: "3", rival: "4" },
+      { label: "अधिकतम टॉर्क", johnDeere: "निर्माता पेज पर नहीं दी गई", rival: "235 Nm" },
+    ],
+    verdict:
+      "यह तुलना सबसे बराबरी की है। मानक लिफ्ट में DI 750 III आगे है — 2200 kg बनाम 2000 kgf — पर 5310 में 2500 kgf का विकल्प भी मिलता है, यानी जरूरत हो तो वह आगे निकल जाता है। DI 750 III चार सिलेंडर का है और उसका टॉर्क कंपनी ने साफ बताया है। 5310 की तरफ टर्बो चार्ज्ड इंजन और HPCR फ्यूल इंजेक्शन है, जो भारी काम में लगातार पावर और ईंधन नियंत्रण के लिए दिया जाता है, और GearPro में 12 आगे + 4 पीछे गियर मानक हैं। इस वर्ग में ट्रैक्टर सालों लंबे घंटे चलता है, इसलिए सर्विस की दूरी और पार्ट्स की उपलब्धता का असर सबसे ज्यादा यहीं पड़ता है।",
+  },
+  {
+    slug: "john-deere-5036d-vs-massey-ferguson-1035-di",
+    johnDeereName: "John Deere 5036D",
+    johnDeereSlug: "5036d",
+    johnDeereImage: "/rivals/john-deere-5036d.png",
+    rivalImage: "/rivals/massey-1035-di.jpg",
+    rivalBrand: "Massey Ferguson",
+    rivalName: "Massey Ferguson 1035 DI",
+    sources: [
+      { label: "deere.co.in — 5036D", url: "https://www.deere.co.in/en/tractors/d-series-tractors/5036d-tractor/" },
+      { label: "masseyfergusonindia.com — MF 1035 DI", url: "https://masseyfergusonindia.com/massey-ferguson/MF-1035-DI" },
+    ],
+    intro:
+      "छोटी और मध्यम जोत वाले किसानों के लिए 36 HP वर्ग सबसे व्यावहारिक रहता है। John Deere 5036D और Massey Ferguson 1035 DI, दोनों ठीक इसी वर्ग में हैं। आँकड़े दोनों कंपनियों की अपनी वेबसाइट से हैं।",
+    rows: [
+      { label: "गियर", johnDeere: "8 आगे + 4 पीछे, कॉलरशिफ्ट", rival: "6 आगे + 2 पीछे (8 आगे + 2 पीछे विकल्प)" },
+      { label: "हाइड्रोलिक लिफ्ट क्षमता", johnDeere: "1600 kgf", rival: "1100 kgf" },
+      { label: "रेटेड RPM", johnDeere: "2100", rival: "निर्माता पेज पर नहीं दी गई" },
+      { label: "इंजन पावर", johnDeere: "36 HP (26.8 kW)", rival: "36 HP (26.47 kW)" },
+      { label: "सिलेंडर", johnDeere: "3", rival: "3" },
+      { label: "इंजन क्षमता", johnDeere: "निर्माता पेज पर नहीं दी गई", rival: "2400 cc" },
+      { label: "PTO", johnDeere: "540 @ 2100 ERPM, इंडिपेंडेंट", rival: "540 @ 1650 ERPM, लाइव सिंगल स्पीड" },
+    ],
+    verdict:
+      "पावर दोनों की लगभग एक जैसी है — 36 HP। इस जोड़ी में फर्क साफ है: 5036D की लिफ्ट क्षमता 1600 kgf है जबकि 1035 DI की 1100 kgf, और गियर 8+4 बनाम 6+2 हैं। यानी भारी इम्प्लीमेंट और तंग जगह में पीछे लेने के मामले में 5036D ज्यादा गुंजाइश देता है। 1035 DI हल्का ट्रैक्टर है (1713 kg) और उसकी इंजन क्षमता कंपनी ने साफ बताई है। अगर आपके इम्प्लीमेंट हल्के हैं और बजट सबसे बड़ी शर्त है तो 1035 DI विकल्प बनता है; भारी काम और ज्यादा गियर चाहिए तो 5036D उसी हिसाब से बना है।",
   },
 ];
 

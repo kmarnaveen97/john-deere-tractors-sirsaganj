@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { DealerCta, SiteFooter, SiteHeader } from "@/components/site-shell";
 import { seriesItems, tractorItems } from "@/lib/catalog";
 import { TractorAdvisor } from "@/components/tractor-advisor";
+import { comparisons } from "@/lib/comparisons";
 import styles from "@/app/section-page.module.css";
 
 export const metadata: Metadata = {
@@ -51,6 +52,24 @@ export default function TractorsPage() {
           </div>
         </div>
       </section>
+      <section className={styles.section}>
+        <div className={styles.shell}>
+          <div className={styles.heading}>
+            <div><p className={styles.kicker}>दूसरे ब्रांड से तुलना</p><h2>John Deere बनाम<br />बाकी ट्रैक्टर</h2></div>
+            <p>हर तुलना में आँकड़े दोनों कंपनियों की अपनी वेबसाइट से लिए गए हैं, और जहाँ दूसरा ट्रैक्टर आगे है वहाँ भी साफ लिखा है।</p>
+          </div>
+          <div className={styles.seriesGrid}>
+            {comparisons.map((item) => (
+              <a className={styles.seriesCard} href={`/compare/${item.slug}`} key={item.slug}>
+                <small>{item.johnDeereName} बनाम</small>
+                <strong>{item.rivalName}</strong>
+                <span>तुलना देखें<ArrowRight size={15} /></span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <DealerCta title="अपने खेत के लिए सही HP और मॉडल चुनें" subject="John Deere ट्रैक्टर मॉडल, कीमत और उपलब्धता" />
       <SiteFooter />
     </main>
