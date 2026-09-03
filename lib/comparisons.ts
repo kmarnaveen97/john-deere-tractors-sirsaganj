@@ -141,6 +141,54 @@ export const comparisons: Comparison[] = [
     verdict:
       "Sonalika DI 745 III की लिफ्ट क्षमता 2000 kg है और उसके गियरबॉक्स के विकल्प ज्यादा हैं — 16 आगे + 4 पीछे तक। यह उन किसानों के लिए मायने रखता है जो बहुत अलग-अलग रफ्तार पर काम करते हैं। 5045D का रेटेड RPM 2100 है, जो DI 745 III के 1900 से ज्यादा है, और उसके पीछे के चार गियर मानक रूप से मिलते हैं। दोनों कंपनियों ने कुछ आँकड़े अपने पेज पर नहीं दिए हैं, इसलिए बाकी तुलना शोरूम पर आमने-सामने ही ठीक से होगी।",
   },
+  {
+    slug: "john-deere-5045d-vs-massey-ferguson-241-di",
+    johnDeereName: "John Deere 5045D",
+    johnDeereSlug: "5045d-powerpro",
+    rivalBrand: "Massey Ferguson",
+    rivalName: "Massey Ferguson 241 DI",
+    sources: [
+      JD_5045D_SOURCE,
+      { label: "masseyfergusonindia.com — MF 241 DI", url: "https://masseyfergusonindia.com/massey-ferguson/MF-241-DI" },
+    ],
+    intro:
+      "शिकोहाबाद में Massey Ferguson का डीलर है और 241 DI इस इलाके का जाना-पहचाना ट्रैक्टर है। ध्यान रहे कि यह 42 HP वर्ग का है जबकि John Deere 5045D 45–46 HP का — यानी दोनों बिल्कुल एक वर्ग में नहीं आते, और नीचे के आँकड़े इसी संदर्भ में देखिए। सभी आँकड़े दोनों कंपनियों की अपनी वेबसाइट से हैं।",
+    rows: [
+      { label: "गियर", johnDeere: "8 आगे + 4 पीछे", rival: "8 आगे + 2 पीछे" },
+      { label: "इंजन पावर", johnDeere: "46 HP (4WD) / 45 HP (2WD)", rival: "31.33 kW (42 HP वर्ग)" },
+      { label: "इंजन क्षमता", johnDeere: "2900 CC", rival: "2500 CC" },
+      { label: "रेटेड RPM", johnDeere: "2100", rival: "2000" },
+      { label: "सिलेंडर", johnDeere: "3", rival: "3" },
+      { label: "हाइड्रोलिक लिफ्ट क्षमता", johnDeere: "1600 kgf", rival: "1700 kgf" },
+      { label: "PTO", johnDeere: "निर्माता पेज पर नहीं दी गई", rival: "540 RPM @ 1500 ERPM (HP नहीं दी गई)" },
+    ],
+    verdict:
+      "यह तुलना बराबरी की नहीं है और यह पहले ही कह देना ठीक है — 241 DI 42 HP वर्ग का ट्रैक्टर है, इसलिए 5045D का ज्यादा पावर और बड़ा इंजन (2900 CC बनाम 2500 CC) होना स्वाभाविक है। असली फर्क गियर में है: 5045D में पीछे चार गियर हैं, 241 DI में दो। लिफ्ट क्षमता में 241 DI थोड़ा आगे है — 1700 kgf बनाम 1600 kgf। अगर आपका काम 42 HP में निपट जाता है तो 241 DI कम कीमत में विकल्प बन सकता है; अगर आपको ज्यादा पावर, ज्यादा गियर और भारी इम्प्लीमेंट चलाने हैं तो 5045D उसी हिसाब से बना है।",
+  },
+  {
+    slug: "john-deere-5045d-vs-powertrac-euro-45-plus",
+    johnDeereName: "John Deere 5045D",
+    johnDeereSlug: "5045d-powerpro",
+    rivalBrand: "Powertrac",
+    rivalName: "Powertrac Euro 45 Plus",
+    sources: [
+      JD_5045D_SOURCE,
+      { label: "powertrac.escortskubota.com — Euro 45 Plus", url: "https://powertrac.escortskubota.com/powerhouse/euro-45-plus" },
+    ],
+    intro:
+      "सिरसागंज में ही Powertrac का डीलर है, इसलिए यह तुलना यहाँ के किसान सबसे ज्यादा करते हैं। Euro 45 Plus और 5045D, दोनों 45–47 HP वर्ग में आते हैं। आँकड़े दोनों कंपनियों की अपनी वेबसाइट से लिए गए हैं।",
+    rows: [
+      { label: "गियर", johnDeere: "8 आगे + 4 पीछे", rival: "8 आगे + 2 पीछे, कॉन्स्टेंट मेश साइड शिफ्ट" },
+      { label: "इंजन क्षमता", johnDeere: "2900 CC", rival: "निर्माता पेज पर नहीं दी गई" },
+      { label: "हाइड्रोलिक लिफ्ट क्षमता", johnDeere: "1600 kgf", rival: "1600 kg" },
+      { label: "इंजन पावर", johnDeere: "46 HP (4WD) / 45 HP (2WD)", rival: "35.0 kW (47 HP वर्ग)" },
+      { label: "सिलेंडर", johnDeere: "3", rival: "3" },
+      { label: "अधिकतम टॉर्क", johnDeere: "निर्माता पेज पर नहीं दी गई", rival: "198.5 Nm" },
+      { label: "PTO पावर", johnDeere: "निर्माता पेज पर नहीं दी गई", rival: "30.6 kW (41.1 HP)" },
+    ],
+    verdict:
+      "लिफ्ट क्षमता दोनों की एक जैसी है — 1600। पावर भी लगभग बराबर है, Euro 45 Plus कागज पर 47 HP वर्ग का है। साफ फर्क फिर गियर का ही है: 5045D में पीछे चार गियर, Euro 45 Plus में दो। Powertrac ने PTO पावर और टॉर्क अपने पेज पर साफ बताए हैं, जो John Deere के पेज पर नहीं हैं — इतनी हद तक Powertrac की जानकारी ज्यादा खुली है। जब दो ट्रैक्टर आँकड़ों में इतने पास हों, तब फैसला मशीन से हटकर सर्विस की दूरी, पार्ट्स की उपलब्धता और पाँच साल बाद की कीमत पर आ जाता है।",
+  },
 ];
 
 export function getComparison(slug: string) {
