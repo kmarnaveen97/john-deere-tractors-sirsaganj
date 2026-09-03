@@ -240,6 +240,10 @@ footer { padding-block: 42px; background: #061d10; color: white; }
 .footer-grid { display: grid; grid-template-columns: 1fr 1fr 1.3fr; align-items: center; gap: 30px; }
 .footer-grid > p { margin: 0; color: rgba(255,255,255,.58); font-size: 12px; line-height: 1.65; }
 .footer-grid .legal { text-align: right; }
+.footer-areas { grid-column: 1 / -1; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.12); }
+.footer-areas > strong { display: block; margin-bottom: 11px; color: rgba(255,255,255,.42); font-size: 11px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+.footer-areas > div { display: flex; flex-wrap: wrap; gap: 9px 16px; color: rgba(255,255,255,.7); font-size: 12px; font-weight: 800; }
+.footer-areas a:hover { color: #ffde00; }
 
 /* S.B. Auto visual system */
 .button, .header-call, .dealer-link, .facebook-links a { border-radius: 9px; }

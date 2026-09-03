@@ -2,8 +2,9 @@ import { ArrowRight, MapPin, MessageCircle } from "lucide-react";
 import styles from "@/app/section-page.module.css";
 import { MobileDock } from "@/components/mobile-dock";
 import { WhatsAppQueryLink } from "@/components/whatsapp-query-link";
+import { districtName, serviceAreas } from "@/lib/service-area";
 
-type NavKey = "home" | "tractors" | "implements" | "precision" | "finance" | "service" | "dealer";
+type NavKey = "home" | "tractors" | "implements" | "precision" | "finance" | "service" | "dealer" | "area";
 
 const navItems: Array<{ key: NavKey; href: string; label: string }> = [
   { key: "tractors", href: "/tractors", label: "ट्रैक्टर" },
@@ -11,8 +12,18 @@ const navItems: Array<{ key: NavKey; href: string; label: string }> = [
   { key: "precision", href: "/precision-ag", label: "Precision Ag" },
   { key: "finance", href: "/finance", label: "फाइनेंस" },
   { key: "service", href: "/service", label: "सर्विस/पार्ट्स" },
+  { key: "area", href: "/service-area", label: "सेवा क्षेत्र" },
   { key: "dealer", href: "/dealer", label: "S.B. Auto" },
 ];
+
+type DockKey = "tractors" | "implements" | "service" | "dealer";
+
+function dockKey(active: NavKey): DockKey | undefined {
+  if (active === "tractors" || active === "implements" || active === "service" || active === "dealer") return active;
+  // Area pages are location-led, so light up the map action.
+  if (active === "area") return "dealer";
+  return undefined;
+}
 
 export function SiteHeader({ active }: { active: NavKey }) {
   return (
@@ -33,7 +44,7 @@ export function SiteHeader({ active }: { active: NavKey }) {
         </WhatsAppQueryLink>
       </header>
       <WhatsAppQueryLink className="whatsapp-float" subject="सामान्य enquiry" aria-label="WhatsApp पर S.B. Auto को सामान्य enquiry भेजें"><MessageCircle size={21} /><span>WhatsApp Query</span></WhatsAppQueryLink>
-      <MobileDock active={active === "home" || active === "precision" || active === "finance" ? undefined : active} />
+      <MobileDock active={dockKey(active)} />
     </>
   );
 }
@@ -63,7 +74,13 @@ export function SiteFooter() {
         </a>
         <p>Etawah Road, Sirsaganj, Firozabad, Uttar Pradesh 283151<br />Phone: +91 70885 01000</p>
         <div className={styles.footerLinks}>
-          <a href="/tractors">ट्रैक्टर</a><a href="/implements">कृषि मशीनें</a><a href="/finance">फाइनेंस</a><a href="/service">सर्विस/पार्ट्स</a><a href="/dealer">संपर्क</a>
+          <a href="/tractors">ट्रैक्टर</a><a href="/implements">कृषि मशीनें</a><a href="/finance">फाइनेंस</a><a href="/service">सर्विस/पार्ट्स</a><a href="/dealer">संपर्क</a><a href="/service-area">सेवा क्षेत्र</a>
+        </div>
+        <p className={styles.footerAreaLabel}>{districtName} ज़िले में हमारा सेवा क्षेत्र</p>
+        <div className={styles.footerLinks}>
+          {serviceAreas.map((area) => (
+            <a href={`/${area.slug}`} key={area.slug}>{area.hindiName}</a>
+          ))}
         </div>
       </div>
     </footer>

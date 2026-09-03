@@ -12,6 +12,7 @@ import {
   Wrench,
 } from "lucide-react";
 import { implementGroups, precisionItems, seriesItems, tractorItems } from "@/lib/catalog";
+import { districtName, serviceAreas } from "@/lib/service-area";
 import { MobileDock } from "@/components/mobile-dock";
 import { WhatsAppQueryLink } from "@/components/whatsapp-query-link";
 
@@ -46,6 +47,7 @@ export default function Home() {
           <a href="/precision-ag">Precision Ag</a>
           <a href="/finance">फाइनेंस</a>
           <a href="/service">सर्विस/पार्ट्स</a>
+          <a href="/service-area">सेवा क्षेत्र</a>
           <a href="/dealer">S.B. Auto</a>
         </nav>
         <WhatsAppQueryLink className="header-call" subject="सामान्य enquiry">
@@ -404,6 +406,15 @@ export default function Home() {
           </a>
           <p>Etawah Road, Sirsaganj, Firozabad, Uttar Pradesh 283151<br />Phone: +91 70885 01000</p>
           <p className="legal">John Deere ट्रैक्टर एवं इम्प्लीमेंट के लिए स्थानीय सेल्स और सर्विस सहायता। मॉडल, कीमत और उपलब्धता के लिए शोरूम से पुष्टि करें।</p>
+          <div className="footer-areas">
+            <strong>{districtName} ज़िले में हमारा अधिकृत सेवा क्षेत्र</strong>
+            <div>
+              {serviceAreas.map((area) => (
+                <a href={`/${area.slug}`} key={area.slug}>{area.hindiName}</a>
+              ))}
+              <a href="/service-area">पूरा सेवा क्षेत्र →</a>
+            </div>
+          </div>
         </div>
       </footer>
     </main>

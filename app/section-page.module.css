@@ -112,6 +112,7 @@
 .footerGrid > p { margin: 0; color: rgba(255,255,255,.58); font-size: 12px; line-height: 1.7; }
 .footerLinks { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 16px; color: rgba(255,255,255,.7); font-size: 12px; font-weight: 800; }
 .footerLinks a:hover { color: #ffde00; }
+.footerAreaLabel { grid-column: 1 / -1; margin: 4px 0 0; color: rgba(255,255,255,.42); font-size: 11px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
 
 /* Shared inner-page refinement */
 .header { border-bottom: 3px solid #ffde00; }
