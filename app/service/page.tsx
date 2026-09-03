@@ -6,7 +6,7 @@ import styles from "@/app/section-page.module.css";
 
 export const metadata: Metadata = {
   title: "ट्रैक्टर सर्विस बुकिंग और John Deere पार्ट्स | S.B. Auto Sirsaganj",
-  description: "S.B. Auto Sales & Services, Sirsaganj पर John Deere ट्रैक्टर की सर्विस बुक करें या genuine parts की availability WhatsApp पर पूछें।",
+  description: "S.B. Auto Sales & Service, Sirsaganj पर John Deere ट्रैक्टर की सर्विस बुक करें या genuine parts की availability WhatsApp पर पूछें।",
 };
 
 export default function ServicePage() {

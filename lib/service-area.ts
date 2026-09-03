@@ -57,7 +57,7 @@ export const serviceAreas: ServiceArea[] = [
     urbanBody: "नगर पालिका परिषद",
     standing: "तहसील मुख्यालय एवं नगर पालिका परिषद",
     intro:
-      "सिरसागंज हमारा अपना शहर है। S.B. Auto Sales & Services का शोरूम Etawah Road पर, सिरसागंज तहसील मुख्यालय के पास ही स्थित है — यानी सिरसागंज के किसानों के लिए John Deere ट्रैक्टर, GreenSystem इम्प्लीमेंट, जेन्युइन पार्ट्स और सर्विस, सब कुछ अपने ही कस्बे में।",
+      "सिरसागंज हमारा अपना शहर है। S.B. Auto Sales & Service का शोरूम Etawah Road पर, सिरसागंज तहसील मुख्यालय के पास ही स्थित है — यानी सिरसागंज के किसानों के लिए John Deere ट्रैक्टर, GreenSystem इम्प्लीमेंट, जेन्युइन पार्ट्स और सर्विस, सब कुछ अपने ही कस्बे में।",
     focus:
       "ट्रैक्टर देखने, चलाकर परखने, कीमत और फाइनेंस समझने के लिए किसी दूसरे शहर जाने की जरूरत नहीं। सीधे शोरूम आइए या WhatsApp पर मॉडल और उपलब्धता पूछ लीजिए।",
     farming:
@@ -255,7 +255,7 @@ export function areaFaqs(area: ServiceArea): AreaFaq[] {
   return [
     {
       q: `${place} में John Deere ट्रैक्टर का शोरूम कहाँ है?`,
-      a: `${place} के किसानों के लिए नजदीकी अधिकृत John Deere डीलर S.B. Auto Sales & Services है, जो Etawah Road, Sirsaganj, ${districtName} (पिन 283151) पर स्थित है। आने से पहले 70885 01000 पर WhatsApp करके मॉडल की उपलब्धता पूछ लेना बेहतर रहता है।`,
+      a: `${place} के किसानों के लिए नजदीकी अधिकृत John Deere डीलर S.B. Auto Sales & Service है, जो Etawah Road, Sirsaganj, ${districtName} (पिन 283151) पर स्थित है। आने से पहले 70885 01000 पर WhatsApp करके मॉडल की उपलब्धता पूछ लेना बेहतर रहता है।`,
     },
     {
       q: `${place} में John Deere ट्रैक्टर की कीमत क्या है?`,
@@ -267,7 +267,7 @@ export function areaFaqs(area: ServiceArea): AreaFaq[] {
     },
     {
       q: `${place} में ट्रैक्टर की सर्विस और जेन्युइन पार्ट्स कहाँ मिलेंगे?`,
-      a: `सर्विस बुकिंग और असली John Deere पार्ट्स के लिए S.B. Auto Sales & Services, Sirsaganj से संपर्क करें। समस्या और मॉडल WhatsApp पर भेज दीजिए ताकि पार्ट की उपलब्धता पहले ही जाँची जा सके।`,
+      a: `सर्विस बुकिंग और असली John Deere पार्ट्स के लिए S.B. Auto Sales & Service, Sirsaganj से संपर्क करें। समस्या और मॉडल WhatsApp पर भेज दीजिए ताकि पार्ट की उपलब्धता पहले ही जाँची जा सके।`,
     },
     {
       q: `क्या ${place} से पुराना ट्रैक्टर देकर नया लिया जा सकता है?`,

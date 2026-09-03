@@ -1,6 +1,6 @@
-# S.B. Auto Sales & Services — John Deere Tractors, Sirsaganj
+# S.B. Auto Sales & Service — John Deere Tractors, Sirsaganj
 
-Hindi-language dealer site for **S.B. Auto Sales & Services** (Etawah Road, Sirsaganj),
+Hindi-language dealer site for **S.B. Auto Sales & Service** (Etawah Road, Sirsaganj),
 covering John Deere India tractors, GreenSystem implements, and Precision Ag products.
 
 Built with **Next.js 16 (App Router)**, React 19, and Tailwind CSS 4. Deployed on **Netlify**.

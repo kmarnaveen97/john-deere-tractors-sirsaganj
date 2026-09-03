@@ -8,7 +8,7 @@ import styles from "@/app/section-page.module.css";
 export const metadata: Metadata = {
   title: "पुराना ट्रैक्टर एक्सचेंज और मूल्यांकन | S.B. Auto Sirsaganj",
   description:
-    "पुराना ट्रैक्टर बेचना है या एक्सचेंज में नया John Deere लेना है? ब्रांड, मॉडल, वर्ष और हालत भेजिए — S.B. Auto Sales & Services, Sirsaganj से कीमत का अंदाजा और आगे की प्रक्रिया समझिए। 70885 01000.",
+    "पुराना ट्रैक्टर बेचना है या एक्सचेंज में नया John Deere लेना है? ब्रांड, मॉडल, वर्ष और हालत भेजिए — S.B. Auto Sales & Service, Sirsaganj से कीमत का अंदाजा और आगे की प्रक्रिया समझिए। 70885 01000.",
   keywords: [
     "पुराना ट्रैक्टर", "second hand tractor", "used tractor exchange", "ट्रैक्टर एक्सचेंज",
     "पुराना ट्रैक्टर बेचें", `used tractor ${districtName}`, "second hand tractor Sirsaganj",

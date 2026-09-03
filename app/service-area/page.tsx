@@ -18,7 +18,7 @@ import {
 
 export const metadata: Metadata = {
   title: `${districtName} ज़िले में John Deere ट्रैक्टर डीलर | अधिकृत सेवा क्षेत्र`,
-  description: `S.B. Auto Sales & Services, Sirsaganj का अधिकृत सेवा क्षेत्र पूरा ${districtName} ज़िला है — ${tehsilCount} तहसील और ${blockCount} विकासखंड। अपने क्षेत्र की जानकारी देखें।`,
+  description: `S.B. Auto Sales & Service, Sirsaganj का अधिकृत सेवा क्षेत्र पूरा ${districtName} ज़िला है — ${tehsilCount} तहसील और ${blockCount} विकासखंड। अपने क्षेत्र की जानकारी देखें।`,
   alternates: { canonical: "/service-area" },
 };
 
@@ -26,7 +26,7 @@ export default function ServiceAreaPage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "AutoDealer",
-    name: "S.B. Auto Sales & Services",
+    name: "S.B. Auto Sales & Service",
     telephone: "+917088501000",
     address: {
       "@type": "PostalAddress",
@@ -62,7 +62,7 @@ export default function ServiceAreaPage() {
               <h1>पूरा {districtName}<br />ज़िला</h1>
             </div>
             <p className={styles.heroLead}>
-              S.B. Auto Sales &amp; Services, Sirsaganj का John Deere सेवा क्षेत्र {districtName} ज़िला ({divisionName}, {stateName}) है।
+              S.B. Auto Sales &amp; Service, Sirsaganj का John Deere सेवा क्षेत्र {districtName} ज़िला ({divisionName}, {stateName}) है।
               ज़िले की सभी {tehsilCount} तहसीलें और {blockCount} विकासखंड इसमें शामिल हैं। नीचे अपना क्षेत्र चुनकर वहाँ की जानकारी देखें।
             </p>
           </div>

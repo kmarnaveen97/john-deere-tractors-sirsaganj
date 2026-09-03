@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: ComparePageProps): Promise<Me
   if (!item) return { title: "तुलना उपलब्ध नहीं | S.B. Auto Sirsaganj" };
 
   const title = `${item.johnDeereName} vs ${item.rivalName} — तुलना | S.B. Auto Sirsaganj`;
-  const description = `${item.johnDeereName} और ${item.rivalName} के आधिकारिक आँकड़ों की तुलना हिंदी में — पावर, सिलेंडर, लिफ्ट क्षमता, गियर और PTO। ${districtName} ज़िले के किसानों के लिए S.B. Auto Sales & Services, Sirsaganj से सलाह लें।`;
+  const description = `${item.johnDeereName} और ${item.rivalName} के आधिकारिक आँकड़ों की तुलना हिंदी में — पावर, सिलेंडर, लिफ्ट क्षमता, गियर और PTO। ${districtName} ज़िले के किसानों के लिए S.B. Auto Sales & Service, Sirsaganj से सलाह लें।`;
 
   return {
     title,

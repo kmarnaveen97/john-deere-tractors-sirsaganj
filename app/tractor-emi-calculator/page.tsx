@@ -8,7 +8,7 @@ import styles from "@/app/section-page.module.css";
 export const metadata: Metadata = {
   title: "ट्रैक्टर EMI कैलकुलेटर | लोन और किस्त का हिसाब | S.B. Auto Sirsaganj",
   description:
-    "ट्रैक्टर पर कितनी EMI बनेगी? कीमत, डाउन पेमेंट, ब्याज दर और अवधि डालकर मासिक किस्त, कुल ब्याज और कुल भुगतान का अनुमान हिंदी में लगाएँ। S.B. Auto Sales & Services, Sirsaganj — 70885 01000.",
+    "ट्रैक्टर पर कितनी EMI बनेगी? कीमत, डाउन पेमेंट, ब्याज दर और अवधि डालकर मासिक किस्त, कुल ब्याज और कुल भुगतान का अनुमान हिंदी में लगाएँ। S.B. Auto Sales & Service, Sirsaganj — 70885 01000.",
   keywords: [
     "ट्रैक्टर EMI कैलकुलेटर", "tractor EMI calculator", "ट्रैक्टर लोन", "tractor loan India",
     "ट्रैक्टर की किस्त", "John Deere tractor finance", `tractor loan ${districtName}`,
@@ -96,7 +96,7 @@ export default function EmiCalculatorPage() {
             <li>सरकारी सब्सिडी लागू हो तो अलग से पूछिए।</li>
           </ul>
           <p className={styles.notice}>
-            <BadgeCheck size={16} /> S.B. Auto Sales &amp; Services केवल quotation, दस्तावेज तैयारी और
+            <BadgeCheck size={16} /> S.B. Auto Sales &amp; Service केवल quotation, दस्तावेज तैयारी और
             उपलब्ध scheme समझने में सहायता करता है। लोन स्वीकृति और ब्याज दर पूरी तरह बैंक या
             फाइनेंस कंपनी के अधिकार में है।
           </p>

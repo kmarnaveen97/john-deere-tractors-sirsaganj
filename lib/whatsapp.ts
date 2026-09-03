@@ -25,7 +25,7 @@ export function whatsappUrl(subject = "सामान्य enquiry", options: 
   const interestDetails = options.interestDetails?.filter(Boolean) ?? [];
   const customerDetails = options.customerDetails?.filter(Boolean) ?? [];
   const message = [
-    "नमस्ते S.B. Auto Sales & Services, Sirsaganj,",
+    "नमस्ते S.B. Auto Sales & Service, Sirsaganj,",
     "",
     "नई वेबसाइट enquiry:",
     `Enquiry: ${subject || "सामान्य enquiry"}`,

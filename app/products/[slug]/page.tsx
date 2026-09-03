@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
   return {
     title: `${displayName} की जानकारी | S.B. Auto Sirsaganj`,
-    description: `${displayName} के उपयोग, मुख्य खूबियाँ और जरूरी जानकारी हिंदी में पढ़ें। S.B. Auto Sales & Services, Sirsaganj से कीमत और उपलब्धता पूछें।`,
+    description: `${displayName} के उपयोग, मुख्य खूबियाँ और जरूरी जानकारी हिंदी में पढ़ें। S.B. Auto Sales & Service, Sirsaganj से कीमत और उपलब्धता पूछें।`,
   };
 }
 
@@ -222,27 +222,27 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <div className={styles.dealerGrid}>
             <div>
               <p className={styles.sectionKicker}>स्थानीय सेल्स एवं सर्विस</p>
-              <h2>S.B. Auto Sales &amp; Services से बात करें</h2>
+              <h2>S.B. Auto Sales &amp; Service से बात करें</h2>
               <p>सही मॉडल, ट्रैक्टर–इम्प्लीमेंट matching, कीमत, फाइनेंस और स्थानीय स्टॉक की पुष्टि सीधे Sirsaganj शोरूम से करें।</p>
             </div>
             <div className={styles.dealerActions}>
               <WhatsAppQueryLink subject={enquirySubject} interestDetails={interestDetails}><MessageCircle size={20} /><span><small>WhatsApp Query</small><strong>+91 70885 01000</strong></span></WhatsAppQueryLink>
-              <a href="https://www.google.com/maps/search/?api=1&query=S%20B%20Auto%20Sales%20%26%20Services%20Etawah%20Road%20Sirsaganj%20Firozabad%20283151" target="_blank" rel="noreferrer">
+              <a href="https://www.google.com/maps/search/?api=1&query=S%20B%20Auto%20Sales%20%26%20Service%20Etawah%20Road%20Sirsaganj%20Firozabad%20283151" target="_blank" rel="noreferrer">
                 <MapPin size={20} /><span><small>शोरूम</small><strong>Etawah Road, Sirsaganj</strong></span>
               </a>
             </div>
           </div>
           <div className={styles.dealerMap}>
             <iframe
-              title="S.B. Auto Sales & Services, Sirsaganj का नक्शा"
-              src="https://www.google.com/maps?q=S.B.%20Auto%20Sales%20%26%20Services%2C%20Etawah%20Road%2C%20Sirsaganj%2C%20Firozabad%2C%20Uttar%20Pradesh%20283151&output=embed"
+              title="S.B. Auto Sales & Service, Sirsaganj का नक्शा"
+              src="https://www.google.com/maps?q=S.B.%20Auto%20Sales%20%26%20Service%2C%20Etawah%20Road%2C%20Sirsaganj%2C%20Firozabad%2C%20Uttar%20Pradesh%20283151&output=embed"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               allowFullScreen
             />
             <div>
               <span><MapPin size={17} /><strong>Etawah Road, Sirsaganj</strong>Firozabad, Uttar Pradesh 283151</span>
-              <a href="https://www.google.com/maps/search/?api=1&query=S%20B%20Auto%20Sales%20%26%20Services%20Etawah%20Road%20Sirsaganj%20Firozabad%20283151" target="_blank" rel="noreferrer">
+              <a href="https://www.google.com/maps/search/?api=1&query=S%20B%20Auto%20Sales%20%26%20Service%20Etawah%20Road%20Sirsaganj%20Firozabad%20283151" target="_blank" rel="noreferrer">
                 Google Maps पर दिशा देखें <ArrowRight size={15} />
               </a>
             </div>
@@ -252,7 +252,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
       <footer className={styles.footer}>
         <div className={styles.shell}>
-          <p>© S.B. Auto Sales &amp; Services · Sirsaganj, Firozabad 283151</p>
+          <p>© S.B. Auto Sales &amp; Service · Sirsaganj, Firozabad 283151</p>
           <p>स्पेसिफिकेशन, वेरिएंट, कीमत और उपलब्धता बदल सकती है। खरीद से पहले शोरूम और आधिकारिक John Deere पेज से पुष्टि करें।</p>
         </div>
       </footer>

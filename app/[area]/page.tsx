@@ -41,8 +41,8 @@ export async function generateMetadata({ params }: AreaPageProps): Promise<Metad
 
   if (!area) return { title: "क्षेत्र उपलब्ध नहीं | S.B. Auto Sirsaganj" };
 
-  const title = `${area.hindiName} में John Deere ट्रैक्टर डीलर | S.B. Auto Sales & Services`;
-  const description = `${fullName(area)}, ${districtName} के किसानों के लिए John Deere ट्रैक्टर, GreenSystem इम्प्लीमेंट, जेन्युइन पार्ट्स, सर्विस और फाइनेंस सहायता। S.B. Auto Sales & Services, Etawah Road, Sirsaganj — 70885 01000.`;
+  const title = `${area.hindiName} में John Deere ट्रैक्टर डीलर | S.B. Auto Sales & Service`;
+  const description = `${fullName(area)}, ${districtName} के किसानों के लिए John Deere ट्रैक्टर, GreenSystem इम्प्लीमेंट, जेन्युइन पार्ट्स, सर्विस और फाइनेंस सहायता। S.B. Auto Sales & Service, Etawah Road, Sirsaganj — 70885 01000.`;
 
   return {
     title,
@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: AreaPageProps): Promise<Metad
       `${area.hindiName} ट्रैक्टर डीलर`,
       `John Deere tractor showroom ${area.name}`,
       `tractor dealer ${districtName}`,
-      "S.B. Auto Sales & Services Sirsaganj",
+      "S.B. Auto Sales & Service Sirsaganj",
     ],
     alternates: { canonical: `/${area.slug}` },
     openGraph: { title, description, type: "website", locale: "hi_IN" },
@@ -69,7 +69,7 @@ export default async function AreaPage({ params }: AreaPageProps) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "AutoDealer",
-    name: "S.B. Auto Sales & Services",
+    name: "S.B. Auto Sales & Service",
     description: `${fullName(area)}, ${districtName} के लिए John Deere ट्रैक्टर बिक्री, सर्विस और पार्ट्स सहायता।`,
     address: {
       "@type": "PostalAddress",

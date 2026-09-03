@@ -4,9 +4,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sbautosirsaganj.netlify.app"),
-  title: "S.B. Auto Sales & Services | John Deere ट्रैक्टर Sirsaganj",
+  title: "S.B. Auto Sales & Service | John Deere ट्रैक्टर Sirsaganj",
   description:
-    "John Deere India के ट्रैक्टर, GreenSystem इम्प्लीमेंट और प्रिसीजन एग्रीकल्चर उत्पादों की पूरी जानकारी हिंदी में। S.B. Auto Sales & Services, Etawah Road, Sirsaganj: 7088501000.",
+    "John Deere India के ट्रैक्टर, GreenSystem इम्प्लीमेंट और प्रिसीजन एग्रीकल्चर उत्पादों की पूरी जानकारी हिंदी में। S.B. Auto Sales & Service, Etawah Road, Sirsaganj: 7088501000.",
   applicationName: "S.B. Auto Sirsaganj",
   manifest: "/manifest.webmanifest",
   appleWebApp: {
