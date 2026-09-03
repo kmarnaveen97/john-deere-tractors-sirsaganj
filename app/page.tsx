@@ -48,6 +48,7 @@ export default function Home() {
           <a href="/finance">फाइनेंस</a>
           <a href="/service">सर्विस/पार्ट्स</a>
           <a href="/service-area">सेवा क्षेत्र</a>
+          <a href="/tractor-emi-calculator">EMI</a>
           <a href="/dealer">S.B. Auto</a>
         </nav>
         <WhatsAppQueryLink className="header-call" subject="सामान्य enquiry">
@@ -413,6 +414,8 @@ export default function Home() {
                 <a href={`/${area.slug}`} key={area.slug}>{area.hindiName}</a>
               ))}
               <a href="/service-area">पूरा सेवा क्षेत्र →</a>
+              <a href="/tractor-emi-calculator">EMI कैलकुलेटर</a>
+              <a href="/purana-tractor-exchange">पुराना ट्रैक्टर एक्सचेंज</a>
             </div>
           </div>
         </div>

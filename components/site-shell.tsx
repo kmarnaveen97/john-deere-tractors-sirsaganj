@@ -74,7 +74,7 @@ export function SiteFooter() {
         </a>
         <p>Etawah Road, Sirsaganj, Firozabad, Uttar Pradesh 283151<br />Phone: +91 70885 01000</p>
         <div className={styles.footerLinks}>
-          <a href="/tractors">ट्रैक्टर</a><a href="/implements">कृषि मशीनें</a><a href="/finance">फाइनेंस</a><a href="/service">सर्विस/पार्ट्स</a><a href="/dealer">संपर्क</a><a href="/service-area">सेवा क्षेत्र</a>
+          <a href="/tractors">ट्रैक्टर</a><a href="/implements">कृषि मशीनें</a><a href="/finance">फाइनेंस</a><a href="/service">सर्विस/पार्ट्स</a><a href="/dealer">संपर्क</a><a href="/service-area">सेवा क्षेत्र</a><a href="/tractor-emi-calculator">EMI कैलकुलेटर</a><a href="/purana-tractor-exchange">पुराना ट्रैक्टर</a>
         </div>
         <p className={styles.footerAreaLabel}>{districtName} ज़िले में हमारा सेवा क्षेत्र</p>
         <div className={styles.footerLinks}>

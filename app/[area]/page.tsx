@@ -4,6 +4,7 @@ import { DealerCta, SiteFooter, SiteHeader } from "@/components/site-shell";
 import { WhatsAppQueryLink } from "@/components/whatsapp-query-link";
 import { seriesItems } from "@/lib/catalog";
 import {
+  areaFaqs,
   blockCount,
   districtName,
   getNearbyAreas,
@@ -85,9 +86,21 @@ export default async function AreaPage({ params }: AreaPageProps) {
     brand: { "@type": "Brand", name: "John Deere" },
   };
 
+  const faqs = areaFaqs(area);
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((entry) => ({
+      "@type": "Question",
+      name: entry.q,
+      acceptedAnswer: { "@type": "Answer", text: entry.a },
+    })),
+  };
+
   return (
     <main className={styles.page}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <SiteHeader active="area" />
 
       <section className={styles.hero}>
@@ -187,6 +200,23 @@ export default async function AreaPage({ params }: AreaPageProps) {
       </section>
 
       <section className={styles.sectionAlt}>
+        <div className={styles.shell}>
+          <div className={styles.heading}>
+            <div>
+              <p className={styles.kicker}>अक्सर पूछे जाने वाले सवाल</p>
+              <h2>{area.hindiName} के<br />किसानों के सवाल</h2>
+            </div>
+            <p>जो सवाल सबसे ज्यादा पूछे जाते हैं, उनके सीधे जवाब। और कुछ जानना हो तो WhatsApp कीजिए।</p>
+          </div>
+          <div className={styles.faq}>
+            {faqs.map((entry) => (
+              <article key={entry.q}><h3>{entry.q}</h3><p>{entry.a}</p></article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.section}>
         <div className={styles.shell}>
           <div className={styles.heading}>
             <div>

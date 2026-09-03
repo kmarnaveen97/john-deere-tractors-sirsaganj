@@ -244,6 +244,38 @@ export const tehsilAreas = serviceAreas.filter((area) => area.isTehsil);
 export const blockAreas = serviceAreas.filter((area) => area.isBlock);
 export const townAreas = serviceAreas.filter((area) => area.urbanBody && !area.isTehsil && !area.isBlock);
 
+export type AreaFaq = { q: string; a: string };
+
+/**
+ * Voice queries run 7-10 words and are conversational, so these are written as
+ * whole spoken questions rather than keyword fragments.
+ */
+export function areaFaqs(area: ServiceArea): AreaFaq[] {
+  const place = area.hindiName;
+  return [
+    {
+      q: `${place} में John Deere ट्रैक्टर का शोरूम कहाँ है?`,
+      a: `${place} के किसानों के लिए नजदीकी अधिकृत John Deere डीलर S.B. Auto Sales & Services है, जो Etawah Road, Sirsaganj, ${districtName} (पिन 283151) पर स्थित है। आने से पहले 70885 01000 पर WhatsApp करके मॉडल की उपलब्धता पूछ लेना बेहतर रहता है।`,
+    },
+    {
+      q: `${place} में John Deere ट्रैक्टर की कीमत क्या है?`,
+      a: `कीमत मॉडल, HP, 2WD या 4WD और चुने गए वेरिएंट पर निर्भर करती है, और समय-समय पर बदलती रहती है। इसीलिए हम वेबसाइट पर कीमत नहीं लिखते — ${place} के लिए मौजूदा कीमत और उपलब्ध ऑफर WhatsApp पर पूछ लीजिए।`,
+    },
+    {
+      q: `क्या ${place} में ट्रैक्टर पर फाइनेंस या लोन मिल जाएगा?`,
+      a: `हाँ, फाइनेंस की सुविधा उपलब्ध लेनदारों के माध्यम से रहती है। EMI का अंदाजा आप हमारे कैलकुलेटर पर खुद लगा सकते हैं, और दस्तावेज तथा प्रक्रिया में शोरूम से सहायता मिलती है। लोन स्वीकृति और ब्याज दर बैंक या फाइनेंस कंपनी तय करती है।`,
+    },
+    {
+      q: `${place} में ट्रैक्टर की सर्विस और जेन्युइन पार्ट्स कहाँ मिलेंगे?`,
+      a: `सर्विस बुकिंग और असली John Deere पार्ट्स के लिए S.B. Auto Sales & Services, Sirsaganj से संपर्क करें। समस्या और मॉडल WhatsApp पर भेज दीजिए ताकि पार्ट की उपलब्धता पहले ही जाँची जा सके।`,
+    },
+    {
+      q: `क्या ${place} से पुराना ट्रैक्टर देकर नया लिया जा सकता है?`,
+      a: `हाँ, किसी भी ब्रांड का पुराना ट्रैक्टर देकर एक्सचेंज पर बात की जा सकती है। ब्रांड, मॉडल, वर्ष और हालत भेजिए — कीमत का शुरुआती अंदाजा मिल जाएगा, और अंतिम आकलन ट्रैक्टर देखने के बाद होता है।`,
+    },
+  ];
+}
+
 /** Short administrative label for the hero stat — `standing` is the full phrase. */
 export function shortType(area: ServiceArea) {
   if (area.key === "firozabad") return "ज़िला मुख्यालय";
