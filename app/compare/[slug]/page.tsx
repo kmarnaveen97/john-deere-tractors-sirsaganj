@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { ArrowRight, ExternalLink, MessageCircle, ScaleIcon } from "lucide-react";
+import { ArrowRight, ExternalLink, MessageCircle, ScaleIcon, Wallet } from "lucide-react";
 import { DealerCta, SiteFooter, SiteHeader } from "@/components/site-shell";
 import { WhatsAppQueryLink } from "@/components/whatsapp-query-link";
-import { comparisons, getComparison, type Comparison } from "@/lib/comparisons";
+import { comparisons, decisionFactors, getComparison, ownershipNote, type Comparison } from "@/lib/comparisons";
 import { districtName } from "@/lib/service-area";
 import styles from "@/app/section-page.module.css";
 
@@ -63,6 +63,23 @@ export default async function ComparePage({ params }: ComparePageProps) {
       <section className={styles.section}>
         <div className={styles.shell}>
           <div className={styles.heading}>
+            <div><p className={styles.kicker}>पहले यह तय कीजिए</p><h2>तुलना करते समय<br />क्या देखना चाहिए</h2></div>
+            <p>आँकड़े ट्रैक्टर के फैसले का एक हिस्सा हैं। बाकी बातें खरीदने के दिन नहीं, दो सीजन बाद समझ आती हैं।</p>
+          </div>
+          <div className={styles.contentGrid}>
+            {decisionFactors.map((factor) => (
+              <article className={styles.infoCard} key={factor.title}>
+                <h2>{factor.title}</h2>
+                <p>{factor.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.shell}>
+          <div className={styles.heading}>
             <div><p className={styles.kicker}>आँकड़े</p><h2>आमने-सामने</h2></div>
             <p>नीचे हर आँकड़ा दोनों कंपनियों की अपनी वेबसाइट से लिया गया है। जहाँ निर्माता ने कोई जानकारी नहीं दी, वहाँ अनुमान नहीं लगाया गया है।</p>
           </div>
@@ -114,6 +131,19 @@ export default async function ComparePage({ params }: ComparePageProps) {
       </section>
 
       <section className={styles.section}>
+        <div className={styles.shell}>
+          <div className={styles.heading}>
+            <div><p className={styles.kicker}>कुल खर्च</p><h2>कीमत बनाम<br />चलाने का खर्च</h2></div>
+            <p>दो ट्रैक्टरों के बीच का असली फर्क अक्सर बिल में नहीं, अगले पाँच साल में दिखता है।</p>
+          </div>
+          <p className={styles.notice}><Wallet size={16} /> {ownershipNote}</p>
+          <p className={styles.formNote}>
+            <a href="/tractor-emi-calculator">EMI कैलकुलेटर पर अपना हिसाब लगाइए <ArrowRight size={13} /></a>
+          </p>
+        </div>
+      </section>
+
+      <section className={styles.sectionAlt}>
         <div className={styles.shell}>
           <div className={styles.heading}>
             <div><p className={styles.kicker}>आगे देखें</p><h2>और जानकारी</h2></div>
